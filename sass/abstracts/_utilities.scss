@@ -1,0 +1,33 @@
+// Js components
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 120vh;
+    width: 0;
+    background: rgba(0, 0, 0, 0.438);
+    z-index: 99;
+}
+
+.overlay-popup {
+    width: 100%;
+}
+
+.scrollable-place {
+    height: 1000px;
+}
+
+.stop-scrolling {
+    height: 100%;
+    overflow: hidden;
+}
+
+.open {
+    left: 0;
+}
+
+// End
+.max-center {
+    max-width: 90rem;
+    margin: 0 auto;
+}

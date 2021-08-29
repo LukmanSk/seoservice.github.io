@@ -1,0 +1,168 @@
+@import "variables/colors";
+@import "abstracts/utilities";
+@import "components/buttons";
+@import "abstracts/general";
+
+/*  FONTS
+ font-family: 'Open Sans', sans-serif;
+ font-family: 'Roboto', sans-serif;
+ font-family: 'Oswald', sans-serif;
+ font-family: 'Merriweather', serif;
+ font-family: 'Montserrat', sans-serif;
+ font-family: 'Titillium Web', sans-serif;
+ font-family: 'PT Sans', sans-serif;
+*/
+
+// Reset
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+// Header
+header {
+    position: relative;
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1.2rem 2rem;
+        .logo {
+            img {
+                width: 4rem;
+            }
+        }
+        .hamburger {
+            cursor: pointer;
+            .line {
+                width: 1.6em;
+                height: .2em;
+                margin-top: .3em;
+                background: #000;
+                border-radius: 2px;
+            }
+            transition: .3s;
+            &:hover {
+                .line {
+                    background: $clr-01;
+                }
+            }
+        }
+        ul {
+            // display: none;
+            position: absolute;
+            height: 100vh;
+            width: 100%; //in desktop it will be 25%
+            background: rgba(0, 0, 0, 0.842);
+            color: white;
+            top: 0;
+            left: -100rem;
+            text-align: center;
+            transition: .5s ease-out;
+            z-index: 100;
+            .close-icon {
+                position: absolute;
+                top: 2%;
+                left: 80%;
+                cursor: pointer;
+                .cross {
+                    font-size: 2rem;
+                    color: white;
+                }
+            }
+            li {
+                margin-top: 5rem;
+                list-style: none;
+                a {
+                    color: white;
+                    text-decoration: none;
+                    font-size: 1.25rem;
+                    font-family: 'PT Sans', sans-serif;
+                    transition: .3s ease;
+                    &:hover {
+                        color: $clr-02;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:40em) {
+    header {
+        nav {
+            ul {
+                width: 25%;
+            }
+        }
+    }
+}
+
+// hero
+.hero {
+    // padding: 2rem;
+    @import "sections/hero";
+}
+
+// hero
+.hero-2 {
+    margin-top: 3rem;
+    @import "sections/hero2";
+}
+
+// Services
+.services {
+    background: $clr-01;
+    @import "sections/services";
+}
+
+// Brand Power
+.brand-power {
+    @import "sections/brand-power";
+}
+
+// our-team
+.out-team {
+    background: $clr-01;
+    @import "sections/our-team";
+}
+
+// FAQ 
+.faq {
+    padding: 2rem;
+    @import "sections/faq";
+}
+
+// team2
+.team-2 {
+    margin-top: 4rem;
+    background-image: linear-gradient(180deg, #6733e2 33.33%, #f8dd28 33.33%, #f8dd28 66.66%, #6733e2 66.66%);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    @import "sections/team-2";
+}
+
+// contact
+.contact {
+    background: $clr-03;
+    @import "sections/contact";
+}
+
+// footer
+footer {
+    background: $clr-06;
+    @import "sections/footer";
+}

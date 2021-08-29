@@ -1,0 +1,32 @@
+h2,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h2 {
+    color: $clr-01;
+    line-height: 1.1;
+}
+
+p {
+    font-size: 1.125rem;
+    line-height: 1.6;
+}
+
+h1,
+h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.img-credit {
+    font-size: 1.125rem;
+    margin-top: 1.25rem;
+    a {
+        text-underline-offset: .15em;
+        color: #000;
+    }
+}
+
+h3 {
+    font-family: 'Oswald', sans-serif;
+}

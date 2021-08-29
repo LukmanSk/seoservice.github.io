@@ -1,0 +1,132 @@
+.columns {
+    padding: 4rem 2rem;
+    .col {
+        padding-top: 3rem;
+    }
+    .col-1-content {
+        h3 {
+            color: $clr-01;
+            font-size: 2.25rem;
+            font-family: 'Montserrat', sans-serif;
+        }
+        h6 {
+            font-size: 1.125rem;
+            margin-top: 1.25rem;
+            line-height: 1.8;
+            font-family: 'PT Sans', sans-serif;
+            font-style: italic;
+        }
+        p {
+            margin-top: 1.25rem;
+            line-height: 1.8;
+        }
+        .social-links {
+            i {
+                color: $clr-01;
+                margin-top: 1.25rem;
+                font-size: 2rem;
+                padding: 0 .5rem;
+            }
+        }
+    }
+    .col-2-content {
+        h6 {
+            font-size: 1.25rem;
+            color: $clr-01;
+            margin-top: 1.25rem;
+            text-transform: uppercase;
+        }
+        p {
+            font-size: 1.125rem;
+            color: #000;
+            line-height: 1.6;
+            margin-top: 1.25rem;
+            span {
+                display: block;
+            }
+        }
+        h6:nth-of-type(1) {
+            margin-top: 0;
+        }
+        ul {
+            list-style: none;
+            margin-top: 1.25rem;
+            li {
+                margin-left: 2.25rem;
+                &::before {
+                    content: "\f00c";
+                    display: inline-block;
+                    font-family: "Font Awesome 5 Free";
+                    font-weight: 600;
+                    margin-left: -2.25rem;
+                    width: 36px;
+                }
+            }
+        }
+    }
+    .contact-form {
+        h6 {
+            font-size: 2.25rem;
+            color: $clr-01;
+            line-height: 1.1;
+        }
+        .form {
+            display: flex;
+            flex-direction: column;
+            margin-top: 1.25rem;
+            input,
+            textarea {
+                padding: .75rem .75rem;
+                margin-top: 1rem;
+                border-radius: .8rem;
+                border: none;
+                outline: none;
+            }
+            .contact-btn {
+                margin-top: 1rem;
+                border-radius: .8rem;
+                border: none;
+                outline: none;
+                background: $clr-01;
+                color: white;
+                text-transform: uppercase;
+                transition: .3s ease-out;
+                &:hover {
+                    filter: brightness(150%);
+                }
+            }
+        }
+    }
+}
+
+@media (min-width:40em) {
+    .columns {
+        padding: 4rem 2rem;
+    }
+}
+
+@media (min-width:60em) {
+    .columns {
+        display: flex;
+        gap: 3rem;
+        padding: 4rem;
+        .col {
+            padding: 0 1rem;
+            padding-top: 3rem;
+            width: 33%;
+        }
+        .col-3 {
+            width: 40%;
+        }
+        .contact-form {
+            .form {
+                input {
+                    padding: 1rem 0.75rem;
+                }
+                textarea {
+                    padding: 0 .75rem;
+                }
+            }
+        }
+    }
+}

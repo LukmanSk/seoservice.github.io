@@ -1,0 +1,74 @@
+.columns {
+    padding: 2rem;
+    .col-1 {
+        font-size: 1vw;
+        margin: 0 auto;
+    }
+    .col-1-content {
+        font-size: clamp(.96rem, 1vw, 1rem);
+        // padding: 2rem;
+        background: $clr-01;
+        padding: 1.5rem;
+        $bd-rad: .4rem;
+        border-radius: $bd-rad;
+        .img-content {
+            border-radius: $bd-rad;
+            img {
+                overflow: hidden;
+                width: 100%;
+                border-radius: $bd-rad;
+            }
+        }
+        p {
+            font-size: 1.125em;
+            margin-top: 1.25rem;
+            color: white;
+        }
+    }
+    .img-credit {
+        font-size: 1.125rem;
+        margin-top: 1.25rem;
+        a {
+            text-underline-offset: .15em;
+            color: #000;
+        }
+    }
+    .col-2 {
+        margin-top: 3rem;
+    }
+    .text-content {
+        font-size: clamp(.781rem, 1vw, 1rem);
+        h6 {
+            font-size: 1.125rem;
+            letter-spacing: 3px;
+            font-weight: 400;
+        }
+        h2 {
+            font-size: 2.25em;
+            margin-top: 1.25rem;
+        }
+        p {
+            margin-top: 2.188rem;
+            span {
+                font-weight: 600;
+                display: block;
+                margin-bottom: 2rem;
+            }
+        }
+        .btn-hero-2 {
+            margin-top: 2.5rem;
+            padding: 1.063rem 3.125rem;
+        }
+    }
+}
+
+@media (min-width:60em) {
+    .columns {
+        display: flex;
+        padding: 3rem 7rem;
+        gap: 4rem;
+        .col {
+            width: 50%;
+        }
+    }
+}

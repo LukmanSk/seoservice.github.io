@@ -1,0 +1,24 @@
+p {
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+.sample-text {
+    font-size: 0.875rem;
+}
+
+@media (min-width:60em) {
+    .sample-text {
+        span {
+            display: block;
+        }
+    }
+}
+
+.credit {
+    font-size: 0.8rem;
+    a {
+        color: $clr-05;
+    }
+}

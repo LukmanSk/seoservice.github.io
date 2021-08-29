@@ -1,0 +1,50 @@
+.card-container {
+    padding: 9rem 2rem;
+    max-width: 75rem;
+    margin: 0 auto;
+    .card {
+        margin-top: 2rem;
+        padding: 4rem 1.5rem;
+        text-align: center;
+        background: white;
+        border-radius: 1.5rem;
+        .img-content {
+            margin: 0 auto;
+            $hw: 3.75rem;
+            height: $hw;
+            width: $hw;
+            border-radius: 50%;
+            img {
+                border-radius: 50%;
+                height: $hw;
+                width: $hw;
+            }
+        }
+        h6 {
+            font-size: 1.063rem;
+            font-weight: 400;
+            margin-top: 1.25rem;
+            span {
+                display: block;
+                font-weight: 700;
+            }
+        }
+        p {
+            margin-top: 1.25rem;
+            font-size: 1.125rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+    }
+}
+
+@media (min-width:50em) {
+    .card-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+        gap: 2rem;
+        .card-2 {
+            transform: translateY(5rem);
+        }
+    }
+}

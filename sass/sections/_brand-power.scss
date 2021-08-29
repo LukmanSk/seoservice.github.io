@@ -1,0 +1,76 @@
+.columns {
+    padding: 2rem;
+    .text-content {
+        h1 {
+            font-size: 2.25rem;
+            line-height: 1.1;
+            color: $clr-01;
+            font-weight: 600;
+        }
+        ul {
+            margin-top: 2rem;
+            list-style: none;
+            margin-left: 25px;
+            li {
+                line-height: 1.8;
+                font-size: 1.125rem;
+                font-family: 'PT Sans', sans-serif;
+                &:before {
+                    content: '\2014';
+                    position: absolute;
+                    margin-left: -25px;
+                    color: $clr-01;
+                }
+            }
+        }
+        .circle {
+            $h-w: 6.375rem;
+            height: $h-w;
+            width: $h-w;
+            background: $clr-03;
+            border-radius: 50%;
+            margin-left: auto;
+            margin-top: 1rem;
+        }
+    }
+    .img-content {
+        margin-top: 4rem;
+        img {
+            height: 100%;
+            width: 100%;
+        }
+    }
+}
+
+@media (min-width:60em) {
+    .columns {
+        display: flex;
+        justify-content: center;
+        padding: 7rem;
+        gap: 2rem;
+        .col {
+            width: 50%;
+            max-width: 35.625rem;
+        }
+        .text-content {
+            padding: 3rem;
+            h1 {
+                font-size: clamp(2.25rem, 4vw, 3.75rem);
+            }
+        }
+        .col-2 {
+            padding: 0;
+            padding: 2rem;
+        }
+        .img-content {
+            margin: 0;
+            height: 100%;
+            width: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+        }
+    }
+}
